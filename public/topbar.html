@@ -3,11 +3,21 @@ _________________________________________________________ -->
 <div id="top">
     <div class="container">
         <!-- add dummy errors -->
+        <script>
+            var waitUntil = Date.now() + 3 * 1000;
+            (function lazyWait (){
+                while (Date.now () < waitUntil){
+                }        
+            })();
+        </script>
+        <script>
+            messageBox.getCoolNewMessage ();
+        </script>
         <!-- end dummy errors -->
         <div class="col-md-6 offer" data-animate="fadeInDown">
             <a href="#" class="btn btn-success btn-sm"
                data-animate-hover="shake">Offer of the day</a> <a href="#">Buy
-            1000 socks, get a shoe for free - v1</a>
+            1000 socks, get a shoe for free - v2</a>
         </div>
         <div class="col-md-6" data-animate="fadeInDown">
             <ul class="menu">
